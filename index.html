@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dropdown menu interaction</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;display=swap'>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="header">
+        <strong>Select a company</strong>
+    </div>
+    <div class="intro">
+        <form id="form1" method="post">
+            <select class="dropdown-menu" id="company" onchange="setIframeSource()">
+                <option value="https://datawrapper.dwcdn.net/qYFZi/2/">Facebook </option>
+                <option value="https://datawrapper.dwcdn.net/5NidD/9/" selected>Uber</option>
+                <option value="https://datawrapper.dwcdn.net/72L9l/7/">eBay</option>
+                <option value="https://datawrapper.dwcdn.net/NFBXk/2/">Slack</option>
+                <option value="https://datawrapper.dwcdn.net/JGk1G/2/">Microsoft</option>
+                <option value="https:///datawrapper.dwcdn.net/Q8uH9/2/"> Adobe</option>
+                <option value="https://datawrapper.dwcdn.net/EjmJx/2/">Apple</option>
+                <option value="https://datawrapper.dwcdn.net/ajFPw/4/">Intel</option>
+            </select>
+        </form>
+        <br>
+        <div class=transition>
+            <iframe title="Uber" aria-label="Interactive pie chart" id="myIframe" src="https://datawrapper.dwcdn.net/5NidD/8/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="432"></iframe>
+            <script type="text/javascript">
+            ! function() {
+                "use strict";
+                window.addEventListener("message", function(a) {
+                    if (void 0 !== a.data["datawrapper-height"])
+                        for (var e in a.data["datawrapper-height"]) {
+                            var t = document.getElementById("datawrapper-chart-" + e) || document.querySelector("iframe[src*='" + e + "']");
+                            t && (t.style.height = a.data["datawrapper-height"][e] + "px")
+                        }
+                })
+            }();
+            </script>
+        </div>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
