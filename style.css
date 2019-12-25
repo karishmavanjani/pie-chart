@@ -25,11 +25,37 @@ body,
 
 .intro,
 .header {
-    margin: 0 auto;
+    margin: auto;
     max-width: 800px;
     padding: 5px;
+
+    font: 14px "Hiragino Sans GB", "华文细黑", "STHeiti", "微软雅黑", "Microsoft YaHei", SimHei, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    font-style: bold;
+    width: 100%;
+    /*padding: 10px;*/
+    /*margin-left: auto;*/
+    max-width: 800px;
+    /* margin-right: auto;*/
+    /* min-height: 30px;*/
+    /*height: 100%;*/
+    font-size: 17px;
+
+
+
     /* text-align: center; */
 }
+
+.subtitle {
+    font: 10px "Hiragino Sans GB", "华文细黑", "STHeiti", "微软雅黑", "Microsoft YaHei", SimHei, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    max-width: 800px;
+    width: 100%;
+    margin: auto;
+    padding: 5px;
+    padding-bottom: 3px;
+
+
+}
+
 
 .intro .dropdown-menu {
     -webkit-transition: all 0.1s;
@@ -59,16 +85,6 @@ iframe {
 }
 
 
-.header {
-    width: 100%;
-    /*padding: 10px;*/
-    margin-left: auto;
-    max-width: 800px;
-    margin-right: auto;
-    min-height: 30px;
-    height: 100%;
-    font-size: 17px;
-}
 
 
 
